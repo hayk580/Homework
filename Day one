@@ -1,0 +1,36 @@
+//1.Modify enum YourCards in quiz question 4 to demonstrate that the value of Queen can be 45.
+
+#include <iostream>
+
+int main() {
+	enum YourCards { Ace = 43, Jack, Queen, King };
+	std::cout << Queen;
+	return 0;
+}
+
+//2.Write a program that demonstrates that the size of an unsigned integer and a normal integer are the same, and that both are smaller in size than a long integer.
+
+#include <iostream>
+
+int main() {
+	std::cout << "The size of unsigned int is: " << sizeof(unsigned int) << std::endl
+		<< "The size of int is: " << sizeof(int) << std::endl <<
+		"The size of long integer is: " << sizeof(long int);
+
+	return 0;
+}
+
+//3.Write a program to calculate the area and circumference of a circle where the radius is fed by the user.
+
+#include <iostream>
+
+int main() {
+	const double pi = 3.14;
+	double radius;
+	std::cout << "Enter the radius of the circle: ";
+	std::cin >> radius;
+	double area = pi * (radius * radius);
+	double circumference = 2 * pi * radius;
+	std::cout << "The area is: " << area << std::endl << "The circumference is: " << circumference;
+	return 0;
+}
